@@ -20,7 +20,6 @@ function topupRank($username, $rank, $conn) {
 
     $result = json_decode($response, true);
 
-    // Simpan ke database
     $status = $result['success'] ? 'Berhasil' : 'Gagal';
     $stmt = $conn->prepare("INSERT INTO transactions (username, rank, status, message) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $username, $rank, $status, $result['message']);
