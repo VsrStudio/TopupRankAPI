@@ -28,7 +28,7 @@ git clone https://github.com/YourUsername/TopupRankAPI.git
 ## 2. Set up the database
 
 Import the provided db.sql file into your MySQL database.
-```
+```yaml
 CREATE DATABASE topuprank;
 USE topuprank;
 
