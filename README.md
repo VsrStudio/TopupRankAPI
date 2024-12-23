@@ -60,7 +60,7 @@ INSERT INTO users (username, password, role) VALUES
 ## 3. Configuration
 
 Update the database connection settings in includes/db.php to match your local or server configuration.
-```
+```php
 $host = 'localhost'; 
 $user = 'your_username';
 $pass = 'your_password';
@@ -69,7 +69,7 @@ $dbname = 'topuprank';
 ## 4. Set up API keys
 
 To secure the API, ensure that the API key is set properly in api/middleware.php.
-```
+```php
 if (!isset($headers['Authorization']) || $headers['Authorization'] !== 'Bearer your_api_key') {
     http_response_code(403);
     echo json_encode(['message' => 'Forbidden']);
@@ -93,7 +93,7 @@ Admins can log in via admin/login.php and access the dashboard to view all trans
 - 3. API Requests
 To interact with the API, send POST requests to api/middleware.php with the correct API key.
 Example POST request for top-up:
-```
+```php
 curl -X POST -H "Authorization: Bearer your_api_key" -d "username=user1&rank=VIP" https://yourdomain.com/api/middleware.php
 ```
 ## Contributing
