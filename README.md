@@ -26,7 +26,7 @@ TopupRankAPI is a simple API for managing the rank top-up system. It allows user
 Clone this repository to your local machine or server.
 
 ```bash
-git clone https://github.com/YourUsername/TopupRankAPI.git
+git clone https://github.com/VsrStudio/TopupRankAPI.git
 ```
 ## 2. Set up the database
 
